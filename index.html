@@ -405,16 +405,15 @@ section{padding:80px 0}
   <div class="container">
     <h2 class="section-title">联系方式</h2>
     <div class="contact-info">
-      <a href="#" id="email-link">📧 点击显示邮箱</a>
+      <a href="tel:15233200320">📱 15233200320（微信）</a>
+      <a href="mailto:278013359@qq.com">📧 278013359@qq.com</a>
       <p style="color:rgba(255,255,255,0.5);font-size:0.9rem;letter-spacing:1px">📍 河北 · 邯郸</p>
     </div>
-    <p class="contact-note">如需作品集或详细简历，欢迎邮件联系</p>
+    <p class="contact-note">如需作品集或详细简历，欢迎电话、微信或邮件联系</p>
   </div>
 </section>
 <footer class="footer"><div class="container">© 2026 李喜顺 · 摄影 / 摄像师</div></footer>
 <script>
-const emailLink=document.getElementById('email-link');
-if(emailLink){const user='lixishun';const domain='example.com';emailLink.addEventListener('click',function(e){e.preventDefault();this.textContent=user+'@'+domain;this.href='mailto:'+user+'@'+domain;});}
 const sections=document.querySelectorAll('section[id], header[id]');
 const navLinks=document.querySelectorAll('.nav-inner a');
 window.addEventListener('scroll',()=>{let current='top';sections.forEach(s=>{const top=s.offsetTop-120;if(window.scrollY>=top)current=s.id;});navLinks.forEach(a=>{a.style.color=a.getAttribute('href')==='#'+current?'#d4a853':'';});});
